@@ -1,4 +1,4 @@
-body {
+*body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -60,7 +60,7 @@ header {
     padding: 0px 60px;
     height: 100vh;
     width: 100%;
-    background: #ffffff;
+    background: #F1CA89;
     color: #282a35;
     font-size: 24px;
 }
@@ -113,10 +113,103 @@ header {
 }
 
 /*todo:END section 1  */
+
+/* todo : Start Section 2 */
 .section-2 {
-    height: 100vh;
-    background: #578FCA;
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    color: black;
+
+    padding: 11px 0px;
+    display: grid;
+    gap: 40px;
+    grid-template-areas:
+        'item-1 item-2'
+        'item-3 item-4'
+        'item-5 item-6'
+        'item-7 item-8';
+    ;
 }
+
+.article-grid1 {
+    display: flex;
+    justify-content: center;
+    grid-area: item-1;
+    height: auto;
+}
+
+.article-grid2 {
+    background: #F1F0E9;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: item-2;
+    height: auto;
+
+}
+
+.article-grid3 {
+    background: #F1F0E9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: item-3;
+    height: auto;
+
+}
+
+.article-grid4 {
+    display: flex;
+    justify-content: center;
+    grid-area: item-4;
+    height: auto;
+
+}
+
+.article-grid5 {
+
+    display: flex;
+    justify-content: center;
+    grid-area: item-5;
+    height: auto;
+
+}
+
+.article-grid6 {
+    background: #F1F0E9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: item-6;
+    height: auto;
+
+}
+
+.article-grid7 {
+    background: #F1F0E9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: item-7;
+    height: auto;
+
+}
+
+.article-grid8 {
+    display: flex;
+    justify-content: center;
+    grid-area: item-8;
+    height: auto;
+
+}
+
+/* todo : END Section 2 */
 
 
 /* ?End Main */
