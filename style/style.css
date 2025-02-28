@@ -22,6 +22,7 @@ header {
 
     position: fixed;
     top: 0;
+    z-index: 1000;
 }
 
 .navbar-header {
@@ -114,17 +115,85 @@ header {
 
 /*todo:END section 1  */
 
-/* todo : Start Section 2 */
+/* *Start Section 2 */
 .section-2 {
+    width: auto;
+    height: 100vh;
+}
+
+.section-2 h1 {
+    background-color: #282a35;
+    text-align: center;
+    color: white;
+}
+
+.article-section2 {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+
+}
+
+.article-section2 p {
+    width: 50%;
+    text-align: justify;
+    text-indent: 20px;
+
+}
+
+.navbar-section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-right: 100px;
+    background-color: #FFECC7;
+    margin-left: 40px;
+    height: 100px;
+    width: auto;
+    border-radius: 20px;
+}
+
+.navbar-section2 a {
+    text-decoration: none;
+    background: #04aa6d;
+    border-radius: 4px;
+    color: white;
+    width: auto;
+    padding: 2px 10px;
+    transition: all 0.3s ease;
+}
+
+.navbar-section2 a:hover {
+    background-color: #038c50;
+    color: black;
+    padding: 2px 12px;
+    /* Membesarkan font sedikit */
+    transform: scale(1.1);
+    /* Meningkatkan ukuran sedikit */
+
+}
+
+.klik-me-navbar {
+    position: relative;
+    top: -50px;
+    left: 220px;
+}
+
+/* *End Section 2 */
+
+/* todo : Start Section 3 */
+.section-3 {
     width: 100%;
     height: auto;
     background: #ffffff;
     color: black;
 
-    padding: 11px 0px;
     display: grid;
-    gap: 40px;
+    gap: 30px;
     grid-template-areas:
+        'education education'
         'item-1 item-2'
         'item-3 item-4'
         'item-5 item-6'
@@ -132,14 +201,21 @@ header {
     ;
 }
 
-.article-grid1 {
+.education {
+    grid-area: education;
+    text-align: center;
+    background: #282a35;
+    color: white;
+}
+
+.article-section3-grid1 {
     display: flex;
     justify-content: center;
     grid-area: item-1;
     height: auto;
 }
 
-.article-grid2 {
+.article-section3-grid2 {
     background: #F1F0E9;
     padding-right: 40px;
     display: flex;
@@ -151,7 +227,7 @@ header {
 
 }
 
-.article-grid3 {
+.article-section3-grid3 {
     background: #F1F0E9;
     display: flex;
     flex-direction: column;
@@ -162,7 +238,7 @@ header {
 
 }
 
-.article-grid4 {
+.article-section3-grid4 {
     display: flex;
     justify-content: center;
     grid-area: item-4;
@@ -170,7 +246,7 @@ header {
 
 }
 
-.article-grid5 {
+.article-section3-grid5 {
 
     display: flex;
     justify-content: center;
@@ -179,7 +255,7 @@ header {
 
 }
 
-.article-grid6 {
+.article-section3-grid6 {
     background: #F1F0E9;
     display: flex;
     flex-direction: column;
@@ -190,7 +266,7 @@ header {
 
 }
 
-.article-grid7 {
+.article-section3-grid7 {
     background: #F1F0E9;
     display: flex;
     flex-direction: column;
@@ -201,7 +277,7 @@ header {
 
 }
 
-.article-grid8 {
+.article-section3-grid8 {
     display: flex;
     justify-content: center;
     grid-area: item-8;
@@ -209,10 +285,54 @@ header {
 
 }
 
-/* todo : END Section 2 */
+/* todo : END Section 3 */
 
 
 /* ?End Main */
+
+/* *Start Section 4 */
+.section-4 {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    background: red;
+}
+
+.section-4 h1 {
+    width: 100%;
+    background: black;
+    text-align: center;
+    color: white;
+}
+
+.main-section-4 {
+    margin-top: 40px;
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    background: blue;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.article-grid {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+/* *End Section 4 */
+
+
+
+
+
 
 
 /*TOdo Media */
@@ -222,13 +342,13 @@ header {
     }
 
     .section-1 {
-        padding-top: 20px;
-        /* Menambahkan padding-top 20px */
-        padding-left: 60px;
-        /* Padding otomatis untuk sisi kiri (bisa diganti dengan nilai tertentu) */
-
-        flex-direction: column;
-        height: 700px;
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     .article-2 {
@@ -237,10 +357,51 @@ header {
         /* Menurunkan artikel 120px ke atas */
     }
 
+    .article-a {
+        position: relative;
+        right: 150px;
+    }
+
+    .navbar-article-1 {
+        position: relative;
+        top: -49px;
+        right: -350px;
+    }
+
     .article-2 img {
-        margin-top: -50px;
+        position: relative;
+        top: 125px;
+        right: 50px;
+        width: 300px;
+        height: auto;
         /* Menarik gambar ke atas */
     }
+
+    /* todo: start section 2 */
+    .section-3 {
+        width: 100%;
+        height: auto;
+        background: #ffffff;
+        color: black;
+
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding-left: 20px;
+        gap: 30px;
+        grid-template-areas:
+            'education'
+            'item-1 '
+            'item-2 '
+            'item-4 '
+            'item-3 '
+            'item-5 '
+            'item-6 '
+            'item-8 '
+            'item-7 ';
+    }
+
+    /*todo: End Section 2  */
 
     .container {
         padding: 0 15px;
